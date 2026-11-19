@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis — personal voice assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Jarvis</h1>
+<p class="lead">A personal voice assistant for Windows, used by a single YouTube creator on her own computer.</p>
+
+<h2>What it does</h2>
+<p>Jarvis listens for voice commands and performs simple actions on the computer: opening programs and
+websites, setting reminders, changing the volume, answering questions.</p>
+<p>It can also upload a finished video to the owner's own YouTube channel when she asks for it by voice
+("upload the video to YouTube"). The video must already be in a dedicated local folder
+(<code>Videos\YouTube</code>). Jarvis suggests a title, description and tags and uploads the video
+through the YouTube Data API.</p>
+
+<h2>How YouTube data is used</h2>
+<ul>
+<li>The only permission requested is <code>https://www.googleapis.com/auth/youtube.upload</code>.</li>
+<li>Jarvis only calls <code>videos.insert</code> to upload a video the owner chose.</li>
+<li>Videos are always uploaded as <strong>private</strong>. The owner reviews each one and publishes it herself in YouTube Studio.</li>
+<li>Jarvis does not read, change or delete existing videos, comments, analytics or any other channel data.</li>
+<li>There is no server: everything runs on the owner's computer, and no data is sent anywhere except to YouTube.</li>
+</ul>
+
+<h2>Who can use it</h2>
+<p>Jarvis is not a public service. It is a personal tool for the owner of one YouTube channel; it is not offered to other users.</p>
+
+<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+</main>
+</body>
+</html>

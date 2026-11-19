@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis — Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p><a href="index.html">← Jarvis</a></p>
+<h1>Privacy Policy</h1>
+<p>Last updated: 18 November 2026</p>
+
+<p>Jarvis is a personal voice assistant that runs on its owner's Windows computer. It uses YouTube API
+Services to upload videos to the owner's own YouTube channel. By using Jarvis you agree to be bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and your data is also subject to the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>Data Jarvis accesses</h2>
+<p>With your permission (the <code>youtube.upload</code> scope) Jarvis uploads video files that you placed in
+the <code>Videos\YouTube</code> folder on your computer, together with the title, description and tags for them.
+Jarvis does not access any other YouTube or Google account data.</p>
+
+<h2>How the data is used, stored and shared</h2>
+<ul>
+<li>Videos and their metadata are sent only to YouTube, only when you ask Jarvis to upload them.</li>
+<li>The Google access token is stored only on your computer (<code>%USERPROFILE%\.jarvis\youtube\token.json</code>).
+A local list of uploaded file names and video IDs is kept in the same folder so the same file is not uploaded twice.</li>
+<li>Jarvis has no server, collects no analytics and does not share, sell or transfer any data to third parties.</li>
+<li>Voice commands are recognised on the computer; the text of a request may be sent to the AI model that
+powers the assistant (Anthropic Claude) to understand it. YouTube data is not included in those requests.</li>
+</ul>
+
+<h2>Cookies</h2>
+<p>Jarvis does not use cookies and does not store information on or read it from your browser.</p>
+
+<h2>Deleting your data and revoking access</h2>
+<p>You can revoke Jarvis's access at any time on the
+<a href="https://myaccount.google.com/connections">Google security settings page</a>.
+To delete the locally stored data, delete the <code>%USERPROFILE%\.jarvis\youtube</code> folder. Jarvis stores
+nothing else, so nothing remains after that.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: open an issue in the
+<a href="https://github.com/dontvan228-hue/jarvis/issues">project repository</a>.</p>
+</main>
+</body>
+</html>

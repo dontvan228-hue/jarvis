@@ -10,3 +10,5 @@ h2 { font-size: 1.2rem; margin-top: 2rem; }
 .lead { color: var(--muted); font-size: 1.1rem; }
 a { color: var(--link); }
 code { font-size: .9em; }
+footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid color-mix(in srgb, var(--fg) 15%, transparent); }
+.yt { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
